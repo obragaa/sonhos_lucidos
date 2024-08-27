@@ -114,3 +114,42 @@ body:after {
     min-height: 100vh;
 }
 
+/* Estilo específico para a página de edição */
+form.edit-form {
+    background-color: rgba(255, 255, 255, 0.9); /* Um pouco mais claro */
+    border: 1px solid #3498db; /* Borda azul para destaque */
+}
+
+button.edit-button {
+    background-color: #2ecc71; /* Verde para indicar 'Salvar' */
+}
+
+button.edit-button:hover {
+    background-color: #27ae60; /* Hover mais escuro */
+}
+
+/* Estilo específico para a página de exclusão */
+form.delete-form {
+    background-color: rgba(255, 99, 71, 0.1); /* Um leve vermelho de fundo */
+    border: 1px solid #e74c3c; /* Borda vermelha */
+}
+
+button.delete-button {
+    background-color: #e74c3c; /* Vermelho para 'Excluir' */
+    color: white;
+}
+
+button.delete-button:hover {
+    background-color: #c0392b; /* Hover mais escuro */
+}
+
+a.cancel-link {
+    color: #3498db;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+a.cancel-link:hover {
+    text-decoration: underline;
+}
