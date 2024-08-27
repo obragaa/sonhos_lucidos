@@ -9,28 +9,30 @@
     <title>Visualizador de Sonhos Lúcidos</title>
 </head>
 <body>
-    <h1>Bem-vindo ao Visualizador de Sonhos Lúcidos</h1>
+    <div class="main-container">
+        <h1>Bem-vindo ao Visualizador de Sonhos Lúcidos</h1>
 
-    <form method="POST">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Salvar Sonho</button>
-    </form>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Salvar Sonho</button>
+        </form>
 
-    <h2>Seus Sonhos</h2>
-    <ul>
-        {% for sonho in sonhos %}
-            <li>
-                <strong>{{ sonho.titulo }}</strong> ({{ sonho.data }})
-                <br>
-                <em>Emoção:</em> {{ sonho.emocao }} - <em>Nível de Lucidez:</em> {{ sonho.nivel_lucidez }}
-                <p>{{ sonho.descricao }}</p>
-                <a href="{% url 'editar_sonho' sonho.pk %}">Editar</a> |
-                <a href="{% url 'excluir_sonho' sonho.pk %}">Excluir</a>
-            </li>
-        {% empty %}
-            <li>Nenhum sonho registrado ainda.</li>
-        {% endfor %}
-    </ul>
+        <h2>Seus Sonhos</h2>
+        <ul>
+            {% for sonho in sonhos %}
+                <li>
+                    <strong>{{ sonho.titulo }}</strong> ({{ sonho.data }})
+                    <br>
+                    <em>Emoção:</em> {{ sonho.emocao }} - <em>Nível de Lucidez:</em> {{ sonho.nivel_lucidez }}
+                    <p>{{ sonho.descricao }}</p>
+                    <a href="{% url 'editar_sonho' sonho.pk %}">Editar</a> |
+                    <a href="{% url 'excluir_sonho' sonho.pk %}">Excluir</a>
+                </li>
+            {% empty %}
+                <li>Nenhum sonho registrado ainda.</li>
+            {% endfor %}
+        </ul>
+    </div>
 </body>
 </html>
