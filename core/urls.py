@@ -9,4 +9,6 @@ router.register(r'sonhos', SonhoViewSet)  # O prefixo 'sonhos' será usado para 
 urlpatterns = [
     path('', views.index, name='index'),  # Página inicial
     path('api/', include(router.urls)),  # API REST acessível via /api/sonhos/
+    path('editar/<int:pk>/', views.editar_sonho, name='editar_sonho'),  # Rota para edição
+    path('excluir/<int:pk>/', views.excluir_sonho, name='excluir_sonho'),  # Rota para exclusão
 ]
