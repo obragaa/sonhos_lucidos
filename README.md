@@ -19,18 +19,31 @@ sonhos_lucidos/
 │
 ├── core/                   # Aplicativo principal
 │   ├── migrations/         # Arquivos de migração do banco de dados
-│   ├── static/             # Arquivos estáticos (CSS, JS, imagens)
-│   ├── templates/          # Templates HTML
-│   ├── admin.py            # Configurações do admin do Django
-│   ├── apps.py             # Configurações do app
-│   ├── models.py           # Definições de modelos do banco de dados
-│   ├── views.py            # Lógica das views
-│   └── urls.py             # Definições de rotas do app
+│   ├── static/             # Arquivos estáticos específicos do app (CSS, JS, imagens)
+│   │   ├── core/           # Arquivos estáticos organizados por app
+│   │   │   ├── css/        # Estilos CSS do aplicativo
+│   │   │   ├── images/     # Imagens usadas no aplicativo
+│   ├── templates/          # Templates HTML específicos do app
+│   │   └── core/           # Templates específicos do aplicativo "core"
+│   │       ├── editar_sonho.html    # Página de edição de sonhos
+│   │       ├── excluir_sonho.html   # Página de exclusão de sonhos
+│   │       ├── index.html           # Página inicial da aplicação
+│   │       ├── login.html           # Página de login
+│   │       └── register.html        # Página de registro
+│   ├── admin.py            # Configurações do Django admin para o app
+│   ├── apps.py             # Configurações da aplicação "core"
+│   ├── models.py           # Definições dos modelos do banco de dados (Sonhos)
+│   ├── views.py            # Lógica das views do app (controladores)
+│   ├── forms.py            # Formulários usados no aplicativo
+│   └── urls.py             # Definições de rotas do aplicativo "core"
 │
-├── media/                  # Diretório para uploads de mídia
-├── static/                 # Diretório para arquivos estáticos coletados
-├── templates/              # Diretório para templates base
+├── static/                 # Diretório para arquivos estáticos coletados (para deploy)
+├── templates/              # Diretório para templates compartilhados entre apps
+│   └── base.html           # Template base utilizado em todas as páginas
 │
+├── media/                  # Diretório para uploads de mídia (não utilizado no projeto)
+├── venv/                   # Ambiente virtual Python (opcional)
+├── db.sqlite3              # Banco de dados SQLite (gerado automaticamente)
 ├── manage.py               # Script de gerenciamento do Django
 └── README.md               # Documentação do projeto
 ```
