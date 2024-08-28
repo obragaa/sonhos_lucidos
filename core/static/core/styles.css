@@ -84,6 +84,10 @@ ul {
     padding: 0;
 }
 
+ul.errorlist > li{
+    box-shadow: 0 0px 5px rgb(235, 37, 37);
+}
+
 li {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 15px;
