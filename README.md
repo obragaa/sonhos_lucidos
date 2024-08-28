@@ -75,20 +75,26 @@ sonhos_lucidos/
     pip install django
     ```
 
-4. Aplique as migrações do banco de dados:
+4. Instale o Django REST framework:
+
+    ```
+    pip install djangorestframework
+    ```
+
+5. Aplique as migrações do banco de dados:
 
     ```
     python manage.py makemigrations
     python manage.py migrate
     ```
 
-5. Inicie o servidor de desenvolvimento:
+6. Inicie o servidor de desenvolvimento:
 
     ```
     python manage.py runserver
     ```
 
-6. Acesse a aplicação no navegador:
+7. Acesse a aplicação no navegador:
 
     - Abra o navegador e acesse http://127.0.0.1:8000/.
 
