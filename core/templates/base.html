@@ -16,6 +16,15 @@
         <button id="logout-button" type="button" class="btn-logout">Logout</button>
     {% endif %}
 
+    <!-- Contêiner das Nuvens -->
+    <div class="cloud-container">
+        <div class="cloud cloud-1" style="background-image: url('{% static "core/images/nuvem.png" %}');"></div>
+        <div class="cloud cloud-2" style="background-image: url('{% static "core/images/nuvem.png" %}');"></div>
+        <div class="cloud cloud-3" style="background-image: url('{% static "core/images/nuvem.png" %}');"></div>
+        <div class="cloud cloud-4" style="background-image: url('{% static "core/images/nuvem.png" %}');"></div>
+        <div class="cloud cloud-5" style="background-image: url('{% static "core/images/nuvem.png" %}');"></div>
+    </div>
+
     {% block content %}
     <!-- Conteúdo das páginas individuais será injetado aqui -->
     {% endblock %}

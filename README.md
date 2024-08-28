@@ -84,3 +84,22 @@ sonhos_lucidos/
 - **Login:** Faça login usando suas credenciais.
 - **Adicionar Sonhos:** Após o login, adicione, edite e exclua sonhos conforme desejado.
 - **Logout:** Use o botão de logout fixo no canto superior esquerdo para sair da aplicação.
+
+## Screenshots
+
+Aqui estão algumas capturas de tela da aplicação para ilustrar como ela se parece em uso.
+
+### Tela de Login
+![Tela de Login](images/login_tela.png)
+
+### Tela de Registro
+![Tela de Registro](images/register_tela.png)
+
+### Tela Inicial
+![Tela Inicial](images/index_tela.png)
+
+### Tela de Edição de Sonho
+![Tela de Edição de Sonho](images/editar_tela.png)
+
+### Tela de Exclusão de Sonho
+![Tela de Exclusão de Sonho](images/excluir_tela.png)
