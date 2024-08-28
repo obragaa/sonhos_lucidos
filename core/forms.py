@@ -1,4 +1,3 @@
-
 from django import forms
 from .models import Sonho
 
@@ -9,4 +8,7 @@ class SonhoForm(forms.ModelForm):
         widgets = {
             'descricao': forms.Textarea(attrs={'rows': 4, 'cols': 40}),
             'data': forms.SelectDateWidget(),
+            'duracao': forms.TimeInput(attrs={
+                'placeholder': 'Exemplo: 01:30:00'
+            }),
         }
